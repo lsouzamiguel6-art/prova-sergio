@@ -22,22 +22,27 @@
             <div>Senha</div>
             <input type="password">
 
-            <button onclick="entrar">Entrar</button>
+            <button onclick="entrar()">
+                entrar
+            </button>
 
             <button onclick="cadastro()">
                 Cadastrar Novo Usuário
             </button>
-           
         </div>
     </main>
 
     <script src="script.js"></script>
 
     <script>
+        function entrar() {
+            window.location.href = "teladeescolhas.html";
+        }
+        
         function cadastro() {
             window.location.href = "novousuario.html";
-        }s
-        </script>
+        }
+    </script>
 
 </body>
 </html>

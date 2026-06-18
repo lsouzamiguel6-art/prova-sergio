@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Portal ENEM</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal do Candidato ENEM</h1>
+       
+    </header>
+
+    <main>
+
+        <h1>SEJA MUITO BEM VINDO</h1>
+        <div class="container">
+            <h2>Inscrição na Prova</h2>
+<br><br>
+            <form id="formInscricao">
+                <label>ciencias:</label>
+                <select id="lingua" required>
+                    <option value="">-- exatas --</option>
+                    <option value="Inglês">--humanas--</option>
+                    <option value="Espanhol">natureza</option>
+                </select>
+                <label>Língua Estrangeira:</label>
+                <select id="lingua" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Espanhol">Espanhol</option>
+                </select>
+
+                <label>Estado:</label>
+                <select id="estado" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+
+                <label>Cidade:</label>
+                <select id="cidade" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="Sorocaba">Sorocaba</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Campinas">Campinas</option>
+                </select>
+
+                <label>Necessita de atendimento especializado?</label>
+                <select id="atendimento" onchange="mostrarCampoEspecial()" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="Não">Não</option>
+                    <option value="Sim">Sim</option>
+                </select>
+               
+
+                <button type="button" onclick="confirmarInscricao()">Confirmar Inscrição</button>
+
+                <div id="mensagem" class="mensagem"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal do Candidato ENEM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
