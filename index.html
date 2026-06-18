@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do enem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro do enem</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Login</h2>
+<br>
+            <div>E-mail</div>
+            <input type="email">
+            
+            <div>Senha</div>
+            <input type="password">
+
+            <button onclick="entrar">Entrar</button>
+
+            <button onclick="cadastro()">
+                Cadastrar Novo Usuário
+            </button>
+           
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <script>
+        function cadastro() {
+            window.location.href = "novousuario.html";
+        }s
+        </script>
+
+</body>
+</html>
